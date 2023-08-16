@@ -29,7 +29,7 @@ const PostCard: React.FC<{
   return (
     <View className="rounded-lg border-2 border-gray-500 p-4">
       <Text className="text-xl font-semibold text-[#cc66ff]">{post.title}</Text>
-      <Text className="text-white">{post.content}</Text>
+      <Text className="text-black">{post.content}</Text>
     </View>
   );
 };
@@ -48,12 +48,12 @@ const CreatePost: React.FC = () => {
   return (
     <View className="flex flex-col border-t-2 border-gray-500 p-4">
       <TextInput
-        className="mb-2 rounded border-2 border-gray-500 p-2 text-white"
+        className="mb-2 rounded border-2 border-gray-500 p-2 text-black"
         onChangeText={onChangeTitle}
         placeholder="Title"
       />
       <TextInput
-        className="mb-2 rounded border-2 border-gray-500 p-2 text-white"
+        className="mb-2 rounded border-2 border-gray-500 p-2 text-black"
         onChangeText={onChangeContent}
         placeholder="Content"
       />
@@ -66,7 +66,7 @@ const CreatePost: React.FC = () => {
           });
         }}
       >
-        <Text className="font-semibold text-white">Publish post</Text>
+        <Text className="font-semibold text-black">Publish post</Text>
       </TouchableOpacity>
     </View>
   );
